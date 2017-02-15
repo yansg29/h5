@@ -1,0 +1,48 @@
+.remarkWrap{
+	width: 970px;
+	margin: 0 auto;
+	background: white;
+}
+h1{
+	width: 970px;
+	height: 40px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 24px;
+	color: green;
+	line-height: 40px;
+}
+.user{
+	width: 970px;
+	height: 100px;
+}
+.userimg{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+.username{
+	color: orange;
+	font-size: 18px;
+	line-height: 40px;
+}
+.usercomment{
+	line-height: 30px;
+}
+.remarkBox{
+	margin-left: 110px;
+}
+.remarkp{
+	line-height: 40px;
+	font-size: 18px;
+}
+.loading{
+	width: 58px;
+	height: 58px;
+	position: relative;
+	left: 50%;
+	margin-left: -16px;
+	background: url(../img/remark_more_btn_bg.png);
+	margin: 20px;
+}

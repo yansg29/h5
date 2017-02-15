@@ -1,0 +1,335 @@
+.recommendWrap{
+	position: relative;
+	overflow: hidden;
+}
+/*侧边栏*/
+.recommendsidebar{
+	width: 40px;
+	height: 30px;
+	background: rgba(0,0,0,.3) url(../img/recomside.png) no-repeat;
+	position: fixed;
+	left: 0;
+	top: 50%;
+	z-index: 10;
+}
+.recomshow{
+	width: 100px;
+	height: 100px;
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	left: -100px;
+	top: 35%;
+	text-align: center;
+	line-height: 100px;
+	z-index: 10;
+}
+.recomshow>a{
+	color: white;
+	font-size: 20px;
+}
+.recomshow>a:hover{
+	color: red;
+	text-decoration: underline;
+}
+/*全屏滚动盒子*/
+.recommendBox{
+	position: absolute;
+	top: 0;
+}
+/*全屏轮播盒子*/
+.recommend-bannerbox{
+	position: relative;
+	overflow: hidden;
+	left: 0;
+}
+.reban-ul{
+	width: 120px;
+	height: 20px;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -60px;
+	z-index: 2;
+}
+.reban-ul>li{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	float: left;
+	margin-right: 10px;
+	background: rgba(0,0,0,.5);	
+}
+.reban-ul>.reban-lichangge{
+	background: rgba(255,255,255,.5)
+}
+.recommend-bannerbox>span{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 60px;
+	/*background: rgba(0,0,0,.3);*/
+	font-weight: bolder;
+	color: deepskyblue;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	z-index: 2;
+}
+.reban-prev{
+	left: 10%;
+}
+.reban-next{
+	right:10%;
+}
+.reban-imgbox{
+	position: absolute;
+}
+.reban-imgbox>img{
+	float: left;
+}
+/*大洋洲*/
+.recommend-title{
+	width: 610px;
+	height: 90px;
+	padding: 20px;
+	margin: 0 auto;
+	background: url(../img/recommend-titlebg.png) no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 100px;
+	font-family: "宋体";
+	font-size: 65px;
+	font-weight: bold;
+	color: white;
+}
+.content{
+	width: 1015px;
+	height: 390px;
+	margin: 30px auto;	
+}
+.oca-con1{
+	width: 215px;
+	height: 380px;
+	padding: 5px;
+	float: left;
+	background: white;	
+}
+.oca-con1>img{
+	width: 215px;
+	height: 180px;
+}
+.oca-con1>p{
+	margin-bottom: 10px;
+}
+.oca-con1>p>h4{
+	float: left;
+	line-height: 30px;
+}
+.oca-con1>p>a{
+	line-height: 20px;
+}
+.oca-con1 a:hover{
+	color: dodgerblue;
+	text-decoration: underline;
+}
+.oca-con2{
+	width: 315px;
+	height: 390px;
+	margin: 0 5px;	
+	float: left;
+	background: white;
+}
+.oca-con2-imgbox{
+	width: 315px;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+}
+.ocaimg02{
+	width: 315px;
+	height: 300px;
+	transition: all 500ms;
+}
+.ocaimg02:hover{
+	transform: scale(1.1);
+}
+.oca-con2-tex{
+	width: 305px;
+	height: 50px;
+	padding: 0 5px;
+	background: rgba(0,0,0,.5);
+	color: white;
+	line-height: 25px;
+	position: absolute;
+	bottom: 0;
+	overflow: hidden;
+}
+.oca-con2-pri{
+	width: 315px;
+	height: 90px;
+}
+.oc2p-date{
+	width: 315px;
+	height: 30px;
+	line-height: 30px;
+}
+.oc2p-price{
+	width: 315px;
+	height: 60px;
+	line-height: 60px;
+	word-spacing: 10px;
+}
+.oc2p-price>font{
+	font-size: 30px;
+}
+.oc2p-price>span{
+	text-decoration: line-through;
+}
+.oc2p-price-i{
+	float: right;
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	color: white;
+	line-height: 30px;
+	text-align: center;
+	background: deeppink;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.oca-con3{
+	width: 465px;
+	height: 390px;
+	float: left;
+}
+.oca-con3-top{
+	width: 465px;
+	height: 190px;
+	margin-bottom: 10px;
+	background: white;
+}
+.ocaimgbox{
+	width: 238px;
+	height: 190px;
+	overflow: hidden;
+	float: left;
+}
+.ocaimg03{
+	width: 238px;
+	height: 190px;
+	transition: all 500ms;
+}
+.ocaimg03:hover{
+	transform: scale(1.2);
+}
+.oca-con3-infobox{
+	width: 207px;
+	height: 170px;
+	padding: 10px;
+	float: left;
+}
+.oca-con3-tex{
+	width: 207px;
+	height: 60px;
+	line-height: 20px;
+	border-bottom: 1px dotted silver;
+	overflow: hidden;
+}
+.oc3p-date{
+	line-height: 30px;
+}
+.oldprice{
+	line-height: 30px;
+	text-decoration: line-through;
+}
+.newprice{
+	font-size: 24px;
+	color: red;
+	line-height: 50px;
+	word-spacing: 10px;
+}
+.oc3p-price-i{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	color: white;
+	line-height: 30px;
+	text-align: center;
+	background: deeppink;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.oca-con3-bottom{
+	width: 465px;
+	height: 190px;
+	background: white;
+}
+.ocaimgbox{
+	width: 238px;
+	height: 190px;
+	overflow: hidden;
+	float: left;
+}
+.ocaimg04{
+	width: 238px;
+	height: 190px;
+	transition: all 500ms;
+}
+.ocaimg04:hover{
+	transform: scale(1.2);
+}
+.oca-con3b-infobox{
+	width: 207px;
+	height: 170px;
+	padding: 10px;
+	float: left;
+}
+.oca-con3b-tex{
+	width: 207px;
+	height: 60px;
+	line-height: 20px;
+	border-bottom: 1px dotted silver;
+	overflow: hidden;
+}
+.oc3pb-date{
+	line-height: 30px;
+}
+.boldprice{
+	line-height: 30px;
+	text-decoration: line-through;
+}
+.bnewprice{
+	font-size: 24px;
+	color: red;
+	line-height: 50px;
+	word-spacing: 10px;
+}
+.oc3pb-price-i{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	color: white;
+	line-height: 30px;
+	text-align: center;
+	background: deeppink;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+}
+/*推荐项目*/
+.recom-subjectbox{
+	width: 935px;
+	height: 340px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+.recom-subjectbox>img{
+	width: 85px;
+	height: 340px;
+	float: left;
+	transition: all 500ms;
+}
+.recom-subjectbox>.subchange{
+	width: 170px;
+}

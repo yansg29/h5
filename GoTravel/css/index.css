@@ -1,0 +1,680 @@
+.wrap{
+	width: 100%;
+}
+/*主体内容*/
+.content{
+	width: 1200px;
+	margin: 0 auto;
+}
+/*轮播图盒子*/
+.bannerbox{
+	width: 1200px;
+	height: 450px;
+}
+/*所有旅游目的地*/
+.alltraveldestination{
+	width: 228px;
+	height: 448px;
+	float: left;
+	box-shadow: 0 0 2px 2px silver ;
+	z-index: 1;
+}
+.alltraveldestination dt{
+	width: 228px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	background: palevioletred;
+}
+.alltraveldestination dd{
+	width: 200px;
+	height: 59px;
+	padding-right: 28px;
+	text-align: right;
+	line-height: 60px;
+	font-size: 18px;
+	background: white;
+	border-bottom: 1px solid silver;
+	position: relative;
+	word-spacing: 70px;
+}
+.alltraveldestination dd:hover{
+	color: red;
+}
+.menu{
+	width: 700px;
+	position: absolute;
+	top: 0;
+	left: 230px;
+	padding-left: 15px;
+	background: white;
+	display: none;
+	z-index: 10;
+}
+.menu li{
+	width: 700px;
+	line-height: 40px;
+	font-size: 14px;
+	border-bottom: 1px dotted silver;
+	word-spacing: 10px;
+	text-align: left;
+}
+.menu li>font{
+	word-spacing: 20px;
+	font-weight: bold;
+}
+.menu li>a:hover{
+	color: red;
+	font-size: 16px;
+}
+/*轮播图*/
+.banner{
+	width: 970px;
+	height: 450px;
+	float: right;
+	position: relative;
+	overflow: hidden;
+}
+.banimgbox{
+	width: 970px;
+	height: 450px;
+	overflow: hidden;
+}
+.banimgbox img{
+	width: 970px;
+	height: 450px;
+}
+.bannav{
+	width: 970px;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+}
+.now{
+	width: 160px;
+	height: 40px;
+	background: rgba(255,255,255,.5);
+	float: left;
+	margin-right: 1.5px;
+	text-align: center;
+	line-height: 40px;
+}
+.banchange{
+	color: white;
+	font-weight: bold;
+	background: rgba(0,0,0,.5);
+}
+.banner span{
+	width: 40px;
+	height: 80px;
+	background: rgba(0,0,0,.5);
+	text-align: center;
+	line-height: 80px;
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	margin-top: -40px;
+}
+.prev{
+	left: -40px;
+}
+.next{
+	right: -40px;
+}
+/*特价旅游*/
+.specialoffer{
+	width: 1200px;
+	height: 300px;
+	margin: 20px 0px;
+}
+.specialoffer-title{
+	width: 1200px;
+	height: 40px;
+}
+.spo-title{
+	width: 200px;
+	height: 40px;
+	float: left;
+}
+i{
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-top: 5px;
+	background: url(../img/icon-index.png) no-repeat 0 0;
+	float: left;
+}
+.spo-title>p{
+	width: 140px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 26px;
+}
+.spo-more{
+	width: 40px;
+	height: 40px;
+	float: right;
+	text-align: center;
+	line-height: 40px;
+}
+.spo-more>a:hover{
+	color: #0000FF;
+}
+.specialoffer-example{
+	width: 1200px;
+	height: 260px;
+}
+.specialoffer-example>li{
+	width: 268px;
+	height: 238px;
+	border: 1px solid silver;
+	background: white;
+	margin: 0 5px;
+	padding: 10px;
+	float: left;
+}
+.spexam-imgbox{
+	width: 268px;
+	height: 197px;
+	position: relative;
+	overflow: hidden;
+}
+.spexam-imgbox>img{
+	width: 268px;
+	height: 197px;
+	transition: all 300ms; 
+}
+.spexam-imgbox>img:hover{
+	transform: scale(1.2);
+}
+.save{
+	width: 90px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 16px;
+	color: white;
+	background: deeppink;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.project{
+	width: 268px;
+	height: 30px;
+	color: white;
+	line-height: 30px;
+	font-size: 16px;
+	text-indent: 5px;
+	background: rgba(0,0,0,.3);
+	position: absolute;
+	bottom: 0;
+}
+.project:hover{
+	color: red;
+}
+.spexam-price{
+	width: 268px;
+	height: 30px;
+	margin-top: 11px;
+}
+.price{
+	width: 100px;
+	height: 30px;
+	float: left;
+}
+.old{
+	line-height: 10px;
+	color: dimgray;
+	text-decoration: line-through;
+}
+.new{
+	line-height: 20px;
+	color: red;
+	font-size: 18px;
+}
+.buy{
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+	font-size: 20px;
+	background: deeppink;
+	float: right;
+}
+/*广告轮播*/
+.adbanbox{
+	width: 1190px;
+	height: 90px;
+	margin: 10px 5px;
+	position: relative;
+}
+.adimgbox{
+	width: 1190px;
+	height: 90px;
+	overflow: hidden;
+}
+.adbannav{
+	width: 120px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+}
+.adbannav>li{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	float: left;
+	margin-right: 10px;
+	background: dimgray;
+	text-align: center;
+	line-height: 20px;
+}
+.adbannav>.adbannav-change{
+	color: white;
+	background: deeppink;
+}
+/*热门跟团游*/
+.followteam{
+	width: 1200px;
+	/*height: 562px;*/
+}
+.ft-title{
+	width: 1200px;
+	/*height: 40px;*/
+	border-bottom: 2px solid deeppink;
+}
+.ft-title>div{
+	width: 220px;
+	height: 40px;
+	margin: 0 auto;
+}
+.ft-i{
+	width: 40px;
+	height: 40px;
+	background-position-x: -80px;
+}
+.ft-title>div p{
+	/*width: 160px;*/
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 24px;
+}
+.ft-navbox{
+	width: 1200px;
+	height: 40px;
+	margin: 5px 0;
+}
+.ft-nav{
+	width: 590px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	position: relative;
+	left: 50%;
+	margin-left: -295px;
+}
+.ft-nav dt{
+	width: 100px;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+}
+.ft-nav dd{
+	margin: 5px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+}
+.ft-nav dd:hover{
+	color: white;
+	background: darkred;
+}
+.ft-nav>.ft-navchange{
+	color: white;
+	background: darkred;
+}
+.ft-cont{
+	width: 1200px;
+	height: 470px;
+	position: relative;
+}
+.ft-cont-site{
+	width: 268px;
+	height: 450px;
+	padding: 9px 10px;
+	border: 1px solid silver;
+	position: absolute;
+	left: 0;
+}
+.ftsi-ul{
+	width: 268px;
+	height: 150px;
+}
+.ftsi-ul>li{
+	float: left;
+	margin: 10px 5px;
+	background: silver;
+}
+.ftsi-ul>div{
+	text-align: center;
+	color: white;
+	background: deeppink;
+}
+.ftsi-ul>li:hover{
+	color: white;
+	background: red;
+}
+.ft-cont-placebox{
+	width: 590px;
+	height: 470px;		
+	position: absolute;
+	left: 50%;
+	margin-left: -295px;
+	overflow: hidden;
+}
+.ft-cont-place{
+	width: 590px;
+	height: 470px;
+}
+.ft-cont-place>li{
+	width: 272px;
+	height: 210px;
+	float: left;
+	background: white;
+	border: 1px solid silver;
+	margin: 5px;
+	padding: 4px 3px;
+}
+.ft-cont-place>li:hover{
+	box-shadow: #696969 0 0 3px 3px;	
+}
+.ftimg{
+	width: 272px;
+	height: 170px;
+	overflow: hidden;
+}
+.ftimg>img{
+	width: 272px;
+	height: 210px;
+	transition: all 500ms;
+}
+.ftimg>img:hover{
+	transform: translateY(-40px);
+}
+.ftalt{
+	width: 272px;
+	height: 40px;
+}
+.ftalt-left{
+	width: 182px;
+	height: 40px;
+	font-size: 12px;
+	float: left;
+	padding-left: 5px;
+	line-height: 20px;
+	
+}
+.ftalt-left>p{
+	width: 182px;
+	height: 20px;
+	float: left;
+}
+.ellipsis{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ftalt-right{
+	width: 80px;
+	height: 40px;
+	float: right;
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+}
+.ft-cont-recom{
+	width: 288px;
+	height: 468px;
+	border: 1px solid silver;
+	position: absolute;
+	right: 0;
+}
+/*热门自由行*/
+.freewalk{
+	width: 1200px;
+	height: 562px;
+}
+.fw-i{
+	width: 50px;
+	height: 40px;
+	background-position-x: -180px;
+}
+/*广告轮播*/
+.adbanbox-new{
+	width: 1190px;
+	height: 90px;
+	margin: 10px 5px;
+	position: relative;
+}
+.adimgbox-new{
+	width: 1190px;
+	height: 90px;
+	overflow: hidden;
+}
+.adbannav-new{
+	width: 120px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+}
+.adbannav-new>li{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	float: left;
+	margin-right: 10px;
+	background: dimgray;
+	text-align: center;
+	line-height: 20px;
+}
+.adbannav-new>.adbannav-change{
+	color: white;
+	background: deeppink;
+}
+/*达人点评*/
+.comment{
+	width: 1200px;	
+}
+.comment-title{
+	width: 1200px;
+	height: 40px;
+}
+.ct-i{
+	width: 34px;
+	height: 34px;
+	background-position-x: -240px;
+}
+.comment-title>p{
+	height: 40px;
+	font-size: 24px;
+	line-height: 40px;
+}
+.personspeech{
+	width: 1200px;
+}
+.person-left{
+	width: 268px;
+	height: 404px;
+	border: 1px solid silver;
+	background: white;
+	float: left;
+	padding: 10px;
+}
+.person-info{
+	width: 268px;
+}
+.person-info>div{
+	width: 268px;
+	height: 20px;
+}
+.personname>img{
+	margin-right: 20px;
+	float: left;
+}
+.name{
+	float: left;
+}
+.time{
+	float: right;
+}
+.personsite{	
+	margin-top: 10px;
+	clear: both;
+}
+.personsite>img{
+	margin-right: 20px;
+	float: left;
+}
+.person-img{
+	margin-top: 10px;
+	width: 268px;
+	height: 265px;
+	position: relative;
+}
+.person-img>img{
+	width: 268px;
+	height: 265px;
+}
+.person-imginfo{
+	width: 268px;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+}
+.person-imginfo>p{
+	width: 200px;
+	line-height: 50px;
+	text-indent: 1em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	float: left;
+	color: white;
+}
+.person-imginfo>div{
+	width: 68px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	color: red;
+}
+.person-imgtexpl{
+	width: 268px;
+	height: 75px;
+	line-height: 25px;
+	overflow: hidden;
+}
+.person-center{
+	width: 600px;
+	height: 426px;
+	margin: 0 10px;
+	float: left;
+}
+.person-cen1{
+	width: 598px;
+	height: 206px;
+	border: 1px solid silver;
+	background: white;
+	margin-bottom: 10px;
+}
+.person-cenimgbox{
+	width: 330px;
+	height: 206px;
+	float: left;
+	position: relative;
+}
+.person-cenimgbox>img{
+	width: 206px;
+	height: 206px;
+	position: absolute;
+	left: 50%;
+	margin-left: -103px;
+}
+.cen2{
+	margin-top: -8px;
+}
+.person-cenimginfo{
+	width: 330px;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+}
+.person-cenimginfo>p{
+	width: 200px;
+	line-height: 50px;
+	text-indent: 1em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	float: left;
+	color: white;
+}
+.person-cenimginfo>div{
+	width: 68px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	color: red;
+}
+.person-ceninfo{
+	width: 268px;
+	height: 206px;
+	padding-top: 20px;
+	float: left;	
+}
+.person-centex{
+	margin-top: 20px;
+}
+.person-cen2{
+	width: 598px;
+	height: 206px;
+	border: 1px solid silver;
+	background: white;
+}
+.person-right{
+	width: 268px;
+	height: 404px;
+	border: 1px solid silver;
+	background: white;
+	float: left;
+	padding: 10px;
+}
+/*推荐景区图*/
+.recommendimg{
+	clear: both;
+	width: 1200px;
+	height: 99px;
+	padding: 10px 0px;
+	
+}
+.rec{
+	margin-left: 10px;
+}

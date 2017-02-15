@@ -1,0 +1,96 @@
+.relationWrap{	
+	height: 841px;
+	background: url(../img/relationbg.jpg) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.relationTitle{
+	width: 900px;
+	height: 96px;
+	margin: 0 auto;
+	padding-top: 20px;
+	
+}
+.relationTitle>img{
+	float: left;
+	margin-right: 10px;
+}
+.relationTitle>span{
+	line-height: 96px;
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+.relationWay{
+	width: 450px;
+	height: 130px;
+	margin: 0 auto;
+	position: relative;
+	left: 5%;
+}
+strong{
+    display: inline-block;
+	width: 48px;
+	height: 40px;
+	background: url(../img/footersmall.png) no-repeat;
+	float: left;
+	margin-top: 40px;
+	margin-right: 10px;
+	
+}
+.str1{
+	margin-left: 60px;
+	background-position-y: -38px;
+}
+ins{
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	background: url(../img/icons-code.png) no-repeat;
+	float: left;
+}
+.ins1{
+	background-position-y: -140px;
+}
+.download{
+	width: 800px;
+	height: 200px;
+	position: relative;
+	top: 23%;
+	left: 45%;	
+}
+.download>div{
+	height: 60px;
+	font-size: 30px;
+	color: white;
+	margin-bottom: 40px;
+}
+.download>div>span{
+	line-height: 60px;
+	display: inline-block;
+}
+.download>div>p{
+	display: inline-block;
+	width: 160px;
+	height: 50px;
+	border-radius: 10px;
+	background: white;
+	padding: 10px;
+	margin-right: 10px;
+}
+.download>div>p:hover{
+	box-shadow: 0 0 0 3px  silver;
+}
+.phone{
+	width: 400px;
+	height: 60px;
+	position: relative;
+	left: 60%;
+	top: 30%;
+	font-size: 40px;
+	color: red;
+	line-height: 60px;
+	text-align: center;
+	font-stretch:initial ;
+}

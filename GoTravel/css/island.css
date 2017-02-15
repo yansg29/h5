@@ -1,0 +1,87 @@
+.islandWrap{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.islandrecom{
+	width: 1000px;
+	height: 250px;
+	border: 2px solid deeppink;
+}
+.islandrecom>li{
+	width: 230px;
+	height: 230px;
+	float: left;
+	background: white;
+	padding: 10px;
+}
+.des{
+	line-height: 30px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.satisfac{
+	width: 230px;
+	height: 40px;
+	word-spacing: 50PX;
+	line-height: 40PX;	
+}
+.islandinfo{
+	width: 980px;
+	padding: 10px;
+	background: white;
+	clear: both;
+	margin-top: 20px;
+}
+.islandname{
+	line-height: 40px;
+	color: red;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+.islandimg{
+	float: left;
+}
+.islandactive{
+	float: left;
+}
+.islandactive>li{
+	margin-left: 10px;
+	width: 790px;
+	height: 100px;
+	border-bottom: 1px dotted silver;
+}
+.islandactive>li:hover{
+	background: aliceblue;
+}
+.islandactive-cont{
+	float: left;
+	width: 680px;
+	line-height: 30px;
+	color: deepskyblue;
+}
+.islandactive-cont>span:hover{
+	color: red;
+}
+.islandactive-price{
+	font-size: 20px;
+	color: red;
+	line-height: 60px;
+	float: right;
+}
+.islandactive-time{
+	clear: both;
+	line-height: 30px;
+	color: darkgray;
+}
+.island1{
+	height: 450px;
+}
+.island2{
+	height: 200px;
+}
+.island3{
+	height: 280px;
+	margin-bottom: 20px;
+}

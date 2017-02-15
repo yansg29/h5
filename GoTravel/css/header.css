@@ -1,0 +1,47 @@
+.headerbox{
+	width: 100%;
+	height: 100px;
+	background: red;
+}
+.header{
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+}
+.logo{
+	width: 280px;
+	height: 80px;
+	float: left;
+	margin-top: 10px;
+	background: url(../img/logo.png) no-repeat;
+	background-size: 100% 100%;
+}
+.nav{
+	height: 100px;
+    float: right;
+    position: relative;
+}
+.nav li{
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	color: white;
+	font-size: 20px;
+	float: left;
+}
+.nav li:hover{
+	background: orangered;
+	color: black;
+	font-size: 22px;
+	font-weight: bold;
+	transition: font-size 300ms;
+}
+.nav-move{
+	width: 100px;
+	height: 5px;
+	background: yellow;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
