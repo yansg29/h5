@@ -1,0 +1,740 @@
+/*轮播图*/
+.bannerbox{
+    width: 100%;
+    height: 593px;
+    position: relative;
+    overflow: hidden;
+}
+.banner{
+    height: 593px;
+    position: absolute;
+}
+.banner li{
+    width: 100%;
+    height:593px;
+    float: left;
+    position: relative;
+}
+.banner li>img{
+    width: 100%;
+    height:593px;
+}
+.p1{
+    width: 638px;
+    height:70px;
+    position: absolute;
+    top: 150px;
+    left:35%;
+    background: url("../images/banner01_01.png");
+}
+.p2{
+    width: 545px;
+    height:36px;
+    position: absolute;
+    top: 250px;
+    left: 38%;
+    background: url("../images/banner01_02.png");
+}
+.p3{
+    width: 596px;
+    height:20px;
+    position: absolute;
+    top: 320px;
+    left: 36%;
+    background: url("../images/banner01_03.png");
+}
+.p4{
+    width: 181px;
+    height:52px;
+    position: absolute;
+    top: 100px;
+    left: 36%;
+    background: url("../images/banner02_01.png");
+}
+.p5{
+    width: 223px;
+    height:397px;
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    background: url("../images/banner02_02.png");
+}
+.p6{
+    width: 63px;
+    height:19px;
+    position: absolute;
+    bottom: 120px;
+    left: 15%;
+    background: url("../images/banner02_03.png");
+}
+.p7{
+    width: 541px;
+    height:69px;
+    position: absolute;
+    top: 180px;
+    left: 36%;
+    background: url("../images/banner03_01.png");
+}
+.p8{
+    width: 472px;
+    height:35px;
+    position: absolute;
+    top: 270px;
+    left: 39%;
+    background: url("../images/banner03_02.png");
+}
+.pos{
+    width: 220px;
+    height: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -110px;
+
+}
+.pos span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:0;
+    transition: all 500ms;
+}
+.prev{
+    left: 0;
+    background: url("../images/prev_jiantou.png") no-repeat;
+}
+.next{
+    right: 0;
+    background: url("../images/next_jiantou.png") no-repeat;
+}
+.prev:hover{
+	background: url(../images/prev_jiantou_hover.png);
+}
+.next:hover{
+	background: url(../images/next_jiantou_hover.png);
+}
+.smallbox{
+    width: 160px;
+    height: 30px;
+    position: absolute;
+    left: 30px;
+}
+.sleft{
+    width: 50px;
+    height: 5px;
+    float: left;
+    margin-top: 15px;
+    background: url("../images/next&prev_line.png") no-repeat;
+}
+.scenter{
+    width: 60px;
+    height: 30px;
+    float: left;
+}
+.scenter>li{
+    float: left;
+}
+.sc1>img{
+    width: 6px;
+    height: 14px;
+    margin-top: 9px;
+}
+.sc2{
+    width: 47px;
+    height: 14px;
+    margin-top: 9px;
+    background: url("../images/next&prev_mbg02.png") ;
+}
+.now{
+    width: 30px;
+    height: 6px;
+    margin: 0 auto;
+}
+.now>li{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    margin-top: 5px;
+    float: left;
+    margin-right: 4px;
+    background: silver;
+    /*background: url("../images/next&prev_others.png");*/
+}
+#nowchange{
+    width: 6px;
+    height: 6px;
+    background: url("../images/next&prev_now.png") no-repeat;
+}
+.sright{
+    width: 50px;
+    height: 5px;
+    float: left;
+    margin-top: 15px;
+    background: url("../images/next&prev_line.png") no-repeat;
+}
+/*主要产品*/
+.mainchanpinbox{
+    width: 100%;
+    height: 785px;
+    background-color: rgb(239,243,246);
+}
+.mainchanpin{
+    width: 1100px;
+    height: 785px;
+    margin: 0 auto;
+}
+.mcp1{
+    width: 58px;
+    height: 58px;
+    margin: 20px auto;
+    background: url("../images/goOn_icon01.png");
+}
+.mainchanpin h1{
+    width: 230px;
+    height: 60px;
+    font-size: 50px;
+    position: relative;
+    left:50%;
+    margin-left: -115px;
+}
+.cmp2{
+    width: 150px;
+    height: 16px;
+    position: relative;
+    left:50%;
+    margin-left: -45px;
+}
+.cmp3{
+    width: 37px;
+    height: 8px;
+    margin: 10px auto;
+    background: url("../images/three_points01.png");
+}
+.maincontent{
+    width: 1100px;
+    height: 438px;
+    margin: 40px auto;
+}
+.mc1{
+    width: 22px;
+    height: 386px;
+    float: left;
+    margin-top: 52px;
+}
+.mc1>li{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	margin-bottom: 50px;
+	background: white;
+}
+.mc1>li:hover{
+	width: 20px;
+	height: 20px;
+	background: url(../images/chanpin_nowline_daquan.png) no-repeat;
+}
+.mc2{
+	width:370px;
+    height: 438px;
+    margin-left: 40px;
+    float: left;
+    overflow: hidden;
+}
+.mc2>img{
+    width:370px;
+    height: 438px;
+}
+.mc3box{
+	width: 630px;
+    height: 438px;
+    float: right;
+    overflow: hidden;
+}
+.mc3{
+    width: 630px;
+    height: 438px;
+    float: right;
+}
+.mcon-p1{
+	height: 40px;
+    font-size: 24px;
+}
+.mcon-im1{
+    position: relative;
+    top: -40px;
+}
+.mcon-im2{
+    position: relative;
+    top: -40px;
+}
+.mcon-p2{
+	width: 600px;
+	height: 130px;
+	padding: 15px;
+    line-height: 20px;
+}
+.mcon-p2im{
+	width: 96px;
+	height: 96px;
+	float: left;
+	background: url(../images/xiaoniao_icon.png);
+}
+.mcon-p2te{
+	width: 455px;
+	height: 110px;
+	float: left;
+	padding-left: 20px;
+}
+.click{
+	width: 610px;
+	height: 30px;
+	margin-top: 10px;
+	float: left;
+}
+.c1{
+	width: 29px;
+	height: 29px;
+	float: left;
+}
+.c2{
+	display: inline-block;
+	width: 540px;
+	height: 2px;
+	float: left;
+	margin-bottom: 13px;
+	background: url(../images/next&prev_line.png);
+}
+.mcon-p2te1{
+	width: 600px;
+	height: 80px;
+	padding: 20px;
+	line-height: 30px;
+	float: left;
+}
+.mcon-p2te2{
+	width: 210px;
+	height: 60px;
+	float: right;
+	line-height: 60px;
+}
+/*公司简介*/
+.comp{
+    width: 100%;
+    height: 785px;
+    background: url("../images/mokuai02_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+/*业务范围*/
+.businessbox{
+	width: 100%;
+	height: 1120px;
+    background-color: rgb(239,243,246);	
+}
+.business{
+	width: 1100px;
+	height: 1120px;
+	margin: 0 auto;
+}
+.bn1{
+	width: 108px;
+	height: 171px;
+	margin: 10px auto;
+	background: url(../images/yewu_zhiyinimg.jpg);
+}
+h1{
+	width: 200px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 45px;
+    line-height: 60px;
+}
+.bn2{
+	position: relative;
+}
+.bn2>li{
+	width: 1100px;
+}
+.b2{
+	width: 1100px;
+}
+.bn-cont1{
+	width: 1100px;
+	height: 238px;
+}
+.bn-cont1>ul{
+	width: 1100px;
+	height: 120px;
+	padding-top: 59px;
+}
+.bn-cont1>ul li{
+	float: left;
+}
+.bn-contli1{
+	width: 100px;
+	height: 100px;
+	font-size: 80px;
+	color: silver;
+}
+.bn-contli2{
+	width: 250px;
+	height: 120px;
+	margin-left: 130px;
+	line-height: 20px;
+}
+.bn-contli2>h2{
+	margin-top: 40px;
+}
+.bn-contli3{
+	width: 116px;
+	height: 116px;
+	margin: 0 auto;
+}
+.bn-contli4{
+	width: 360px;
+	height: 80px;
+	line-height: 20px;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+.bn-contli5{
+	width: 67px;
+	height: 67px;
+	margin-top: 20px;
+	margin-left: 20px;
+	background: url(../images/business_zhankaishouqi.png) no-repeat;
+	background-position-y: 0;
+}
+.bn5-change{
+	background-position-y: -67px;
+}
+.bn-cont2{
+	width: 780px;
+	margin: 0 auto;
+	text-indent: 2em;
+	display: none;
+}
+/*团队介绍*/
+.teambox{
+	width: 100%;
+	height: 730px;
+	background-color: rgb(239,243,246);	
+}
+.team{
+	width: 1100px;
+	height: 730px;
+	margin: 0 auto;
+}
+.tm1{
+	width: 31px;
+	height: 94px;
+	margin: 0 auto;
+	background: url(../images/tuandui_zhiyinimg.jpg);
+}
+.teamban{
+	width: 1100px;
+	height: 380px;
+	position: relative;	
+	overflow: hidden;
+}
+.tbanbox{
+	width: 1100px;
+	height: 190px;
+	position: absolute;
+	top: 75px;		
+}
+.tbanner{
+	height: 190px;
+	position: absolute;
+	left: -550px;
+	right: 0;
+}
+.tbanner>li{
+	width: 538px;
+	height: 188px;
+	float: left;
+	border: 1px solid silver;
+	margin-right: 10px;
+	position: relative;
+}
+.tban1{
+	width: 165px;
+	height: 188px;
+	position: absolute;
+	left: 20px;	
+}
+.tban1>img{
+	width: 156px;
+	height: 156px;
+	position: absolute;
+	top: -75px;
+	left: 16px;
+}
+.tban1>p{
+	width: 165px;
+	height: 50px;
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+}
+.tban2{
+	width: 250px;
+	height: 188px;
+	position: absolute;
+	left: 220px;
+}
+.tban2-top{
+	width: 250px;
+	height: 130px;
+	line-height: 80px;
+}
+.tban2-bottom{
+	width: 250px;
+	height: 40px;
+	background: silver;
+	
+}
+b{
+	display: block;
+	width: 40px;
+	height: 40px;
+	float: left;
+	background:dimgray url(../images/team_contact.png) no-repeat 12px 12px;
+}
+.tban2-bottom>p{
+	width: 200px;
+	height: 40px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+}
+.tban3{
+	width: 40px;
+	height: 188px;
+	position: absolute;
+	right: 0;
+	background: blue;
+}
+.b1{
+	background-color: blue;
+	width: 40px;
+	height: 160px;
+	background-position: 10px -40px;
+}
+.now1{
+	width: 60px;
+}
+/*合作伙伴*/
+.partnerbox{
+	width: 100%;
+	height: 800px;
+	background: white;
+}
+.partner{
+	width: 1100px;
+	height: 720px;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+.per{
+	width: 1100px;
+	height: 380px;
+}
+.perleft{
+	width: 549px;
+	height: 380px;
+	float: left;
+	margin-top: 100px;
+	border-right: 1px dotted silver;
+}
+.perleft>h2{
+	height: 40px;
+	padding: 0 40px ;
+}
+.perleft>p{
+	width: 100px;
+	padding-left: 40px ;
+}
+.perleft>ul li{
+	width: 183px;
+	height: 190px;
+	float: left;
+	text-align: center;
+	line-height: 190px;
+}
+.perright{
+	width: 550px;
+	height: 380px;
+	float: right;
+	margin-top: 100px;
+}
+.user{
+	width: 550px;
+	height: 40px;
+}
+.user>h2{
+	padding: 0 40px ;
+	float: left;
+}
+.perright>p{
+	width: 100px;
+	padding-left: 40px ;
+}
+em{
+	display: block;
+	float: right;
+	width: 69px;
+	height: 26px;
+	background: url(../images/yonghu_morebg.png) no-repeat -69px 0;
+}
+.perright>ul li{
+	width: 183px;
+	height: 190px;
+	float: left;
+	text-align: center;
+	line-height: 190px;
+}
+/*联系我们*/
+.contactbox{
+	width: 100%;
+	height: 800px;
+}
+.contact{
+	width: 1100px;
+	height: 720px;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+.info{
+	width: 1100px;
+	height: 50px;
+	margin-top: 30px;
+}
+.info>div{
+	width: 348px;
+	height: 48px;
+	margin-right: 15px;
+	float: left;
+	border: 1px solid silver;
+}
+i{
+	display: inline-block;
+	width: 40px;
+	height: 48px;
+	float: left;
+	background:silver url(../images/lianxi_icons.png) no-repeat 10px 12px;
+}
+input{
+	width: 308px;
+	height: 48px;
+	float: left;
+	outline: none;
+	border: none;
+	color: silver;
+	font-size: 16px;
+	text-indent: 1em;
+}
+.i1{
+	background-position-x: -33px;
+}
+.i2{
+	background-position-x: -83px;
+}
+.mess{
+	width: 1100px;
+	height: 210px;
+	margin-top: 30px;
+}
+.me1{
+	width: 715px;
+	height: 210px;
+	float: left;
+	background: yellow;
+}
+.i3{
+	width: 40px;
+	height: 210px;
+	background-position-x: -133px;
+}
+textarea{
+	width: 675px;
+	height: 210px;
+	float: left;
+	outline: none;
+	border: none;
+	color: silver;
+	font-size: 16px;
+	text-indent: 1em;
+}
+.me2{
+	width: 350px;
+	height: 210px;
+	float: left;
+	margin-left: 15px;
+}
+.me2>p{
+	width: 350px;
+	height: 170px;
+	line-height: 80px;	
+}
+.me2>p span{
+	font-size: 18px;
+	font-weight: bold;
+}
+.me2>div{
+	width: 350px;
+	height: 40px;
+	background: blue;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	font-size: 16px;
+}
+.i4{
+	width: 40px;
+	height: 40px;
+	background-color: dodgerblue;
+	background-position-x: -183px;
+}
+.type{
+	width: 1100px;
+	height: 160px;
+}
+.type>div{
+	width: 360px;
+	height: 160px;
+	float: left;
+	margin-right: 3px;	
+	margin-top: 70px;
+}
+.type>div img{
+	width: 101px;
+	height: 101px;
+	margin-top: 30px;
+	float: left;
+}
+.type>div p{
+	width: 230px;
+	height: 160px;
+	float: left;
+	margin-left: 20px;
+	line-height: 35px;
+}
+.type>div p>span{
+	font-size: 30px;
+	font-weight: bold;
+}
+.type>div p>img{
+	height: 5px;
+	width: 230px;
+	margin-top: 1px;
+}
+/*地图*/
+.map{
+	width: 100%;
+	height: 660px;
+	background: white;
+	text-align: center;
+	font-size: 100px;
+}

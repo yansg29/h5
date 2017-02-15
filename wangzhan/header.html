@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/move.js"></script>
+    <script>
+        $(function(){
+            $(".nav>li").hover(function(){
+                $(this).find(".jiantou img").attr("src","images/nav_xiajiantou_hover.png");
+                $(this).find("ul").slideDown(300,"backOut")
+                var index=$(this).index();
+                console.log($(this).width())
+            	var left=$(this).position().left+($(this).width()/2)+10;
+            	$(".dian").stop().animate({"left":left+"px"},300)
+            },function(){
+                $(this).find(".jiantou img").attr("src","images/nav_xiajiantou.png");
+                $(this).find("ul").stop().slideUp(100,"backIn")
+            })          
+        })
+    </script>
+</head>
+<body>
+<div class="headerbox">
+    <div class="header">
+    	
+        <div class="logo"></div>
+        <ul class="nav">
+        	<div class="dian"></div>
+            <li onclick="javascript:window.open('index.html','_self')">首页</li>
+            <li>小鸟掌学
+                <div class="jiantou">
+                    <img src="images/nav_xiajiantou.png" alt="">
+                </div>
+                <ul class="down">
+                    <li onclick="javascript:window.open('aboutxiaoniao.html')">小鸟首页</li>
+                    <li onclick="javascript:window.open('aboutxiaoniao.html#gaishu')">小鸟掌学概述</li>
+                    <li onclick="javascript:window.open('aboutxiaoniao.html#jiazhi')">对企业的价值</li>
+                    <li onclick="javascript:window.open('aboutxiaoniao.html#zhangyun')">小鸟掌云</li>
+                    <li onclick="javascript:window.open('aboutxiaoniao.html#lianmen')">微客联盟</li>
+                    <li onclick="javascript:window.open('aboutxiaoniao.html#app')">APP下载</li>
+                </ul>
+            </li>
+            <li><a href="list.html">小鸟动态</a></li>
+            <li>企业文化
+                <div class="jiantou">
+                    <img src="images/nav_xiajiantou.png" alt="">
+                </div>
+                <ul class="down">
+                    <li onclick="javascript:window.open('article.html?type=companyIdea')">公司理念</li>
+                    <li onclick="javascript:window.open('article.html?type=companyCulture')">公司文化</li>
+                    <li onclick="javascript:window.open('article.html?type=companyEnvironment')">公司氛围</li>
+                </ul>
+            </li>
+            <li>人力资源
+                <div class="jiantou">
+                    <img src="images/nav_xiajiantou.png" alt="">
+                </div>
+                <ul class="down">
+                    <li onclick="javascript:window.open('article.html?type=talents')">人才理念</li>
+                    <li onclick="javascript:window.open('article.html?type=team')">团队介绍</li>
+                    <li onclick="javascript:window.open('article.html?type=joinUs')">招聘信息</li>
+                </ul>
+            </li>
+            <li onclick="javascript:window.open('article.html?type=telUs')">联系我们</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="小鸟掌学,企业培训平台,全民全学、全民全校、全民全智,微课堂,微学习,企业定制培训">
+    <meta name="description" content="“小鸟掌学”云平台是一套完整的专家知识、学习管理、监督考核系统。首先根据企业和员工的特性，抓取学习需求，然后从“平台学习库、行业学习库和企业内训库”中调出教学资源，按学习计划“推送”任务给每一位员工，并对学习过程进行监管，对学习效果进行评估，根据学习情况调整学习计划，不断优化员工的职业生涯">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <style>
+        /*法一：   iframe框架
+        .header{
+            width: 100%;
+            height: 120px;
+        }*/
+    </style>
+    <script>
+       /* 法二    AJAX
+        window.onload=function(){
+        var oHeader=document.getElementById("header");
+        var xhr;
+        if(window.XMLHttpRequest){
+            xhr=new XMLHttpRequest();
+        }else{
+            xhr=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xhr.open("get","header.html",true);
+        xhr.send();
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4){
+                if(xhr.status==200){
+                    oHeader.innerHTML=xhr.responseText;
+                }
+            }
+        }
+        }*/
+       /*法三    jquery ajax
+        $(function(){
+            $("#header").load("header.html")
+        })*/
+    </script>
+</head>
+<body>
+<!--头部开始-->
+<!-- 法一：   iframe框架
+<iframe class="header" src="header.html"></iframe>-->
+<!--法二：   AJAX
+<div id="header"></div>-->
+<!--法三：   jquery ajax-->
+<div id="header"></div>
+<!--头部结束-->
+<!--全屏轮播图开始-->
+<div class="bannerbox">
+    <ul class="banner">
+        <li>
+            <img src="images/banner01_bg.jpg" alt="">
+            <p class="animated rotateInDownRight p1"></p>
+            <p class="animated slideInLeft p2"></p>
+            <p class="animated fadeIn p3"></p>
+        </li>
+        <li><img src="images/banner02_bg.jpg" alt="">
+            <p class="animated bounceInRight p4"></p>
+            <p class="animated slideInLeft p5"></p>
+            <p class="animated slideInRight p6"></p>
+        </li>
+        <li><img src="images/banner01_bg.jpg" alt="">
+            <p class="animated slideInDown p7"></p>
+            <p class="animated slideInUp p8"></p>
+        </li>
+    </ul>
+    <div class="pos">
+    <span class="prev"></span>
+    <span class="next"></span>
+    <div class="smallbox">
+        <div class="sleft"></div>
+        <ul class="scenter">
+            <li class="sc1"><img src="images/next&prev_mbg01.png"></li>
+            <li class="sc2">
+                <ul class="now">
+                    <li id="nowchange"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li class="sc1"><img src="images/next&prev_mbg03.png"></li>
+        </ul>
+        <div class="sright"></div>
+    </div>
+    </div>
+</div>
+<!--全屏轮播图结束-->
+<!--主要产品开始-->
+<div class="mainchanpinbox">
+    <div class="mainchanpin">
+        <div class="mcp1"></div>
+        <h1>主要产品</h1>
+        <p class="cmp2">Our Works</p>
+        <p class="cmp3"></p>
+        <div class="maincontent">
+            <ul class="mc1">
+            	<li></li>
+            	<li></li>
+            	<li></li>
+            	<li></li>
+            	<li></li>
+            	<li></li>
+            </ul>
+            <div class="mc2">
+            	<img class="animated slideInUp" src="images/chanpin_image01.jpg" alt="">
+            	<img class="animated slideInUp" src="images/chanpin_image02.jpg" alt="">
+            	<img class="animated slideInUp" src="images/chanpin_image03.jpg" alt="">
+            	<img class="animated slideInUp" src="images/chanpin_image04.jpg" alt="">
+            	<img class="animated slideInUp" src="images/chanpin_image05.jpg" alt="">
+            	<img class="animated slideInUp" src="images/chanpin_image06.jpg" alt="">
+            </div> 
+            <div class="mc3box">
+            <div class="mc3 animated slideInRight">
+                    <p class="mcon-p1">小鸟掌学</p>
+                    <img class="mcon-im1" src="images/pen_line.png" alt="">
+                    <img class="mcon-im2" src="images/pen.png" alt="">
+                    <div class="mcon-p2">
+                    	<div class="mcon-p2im"></div>
+                    	<div class="mcon-p2te">
+                    		<h3>概述</h3>
+                                                              小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在
+                                                              线培训平台，受到客户与社会的密切关注与欢迎。卓新思创科技有限公司负责小鸟
+                                                              掌学的运营、推广和研发等工作。
+                    	</div>
+                    	<div class="click">
+                    		<img class="c1" src="images/prev_jiantou.png" alt="" />
+                    		<i class="c2"></i>
+                    		<img class="c1" src="images/next_jiantou.png" alt="" />
+                    	</div>
+                    	<div class="mcon-p2te1">
+                                                               我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！<br />
+                                                               我们做的是“新学习、新媒体”！<br />
+                                                               帮助企业建立自己的企业学校，实现：全民全学、全民全校、全民全智(比拼式学习)！<br />
+                    	</div>
+                        <div class="mcon-p2te2">
+                        	<img src="images/yinhao_zuo.png" alt="" />学我所用、学以致用<img src="images/yinhao_you.png" alt="" />
+                        </div>
+                    </div>      
+            </div>
+            <div class="mc3 animated rotateInDownRight">
+            	    <p class="mcon-p1">小鸟掌学</p>
+                    <img class="mcon-im1" src="images/pen_line.png" alt="">
+                    <img class="mcon-im2" src="images/pen.png" alt="">
+                    <div class="mcon-p2">
+                   
+                                                              小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在
+                                                              线培训平台，受到客户与社会的密切关注与欢迎。卓新思创科技有限公司负责小鸟
+                                                              掌学的运营、推广和研发等工作。
+                    	
+                    </div>
+            </div>
+            <div class="mc3 animated rotateInUpRight">
+            	    <p class="mcon-p1">小鸟掌学</p>
+                    <img class="mcon-im1" src="images/pen_line.png" alt="">
+                    <img class="mcon-im2" src="images/pen.png" alt="">
+                    <div class="mcon-p2">
+                    	<div class="mcon-p2im"></div>
+                    	<div class="mcon-p2te">
+                    		<h3>概述</h3>
+                                                              小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在
+                                                              线培训平台，受到客户与社会的密切关注与欢迎。卓新思创科技有限公司负责小鸟
+                                                              掌学的运营、推广和研发等工作。
+                    	</div>
+                    	<div class="click">
+                    		<img class="c1" src="images/prev_jiantou.png" alt="" />
+                    		<i class="c2"></i>
+                    		<img class="c1" src="images/next_jiantou.png" alt="" />
+                    	</div>
+                    	<div class="mcon-p2te1">
+                                                               我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！<br />
+                                                               我们做的是“新学习、新媒体”！<br />
+                                                               帮助企业建立自己的企业学校，实现：全民全学、全民全校、全民全智(比拼式学习)！<br />
+                    	</div>
+                        <div class="mcon-p2te2">
+                        	<img src="images/yinhao_zuo.png" alt="" />学我所用、学以致用<img src="images/yinhao_you.png" alt="" />
+                        </div>
+                    </div>
+            </div>
+            <div class="mc3 animated bounceInRight">
+            	    <p class="mcon-p1">小鸟掌学</p>
+                    <img class="mcon-im1" src="images/pen_line.png" alt="">
+                    <img class="mcon-im2" src="images/pen.png" alt="">
+                    <div class="mcon-p2">
+                   
+                                                              小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在
+                                                              线培训平台，受到客户与社会的密切关注与欢迎。卓新思创科技有限公司负责小鸟
+                                                              掌学的运营、推广和研发等工作。
+                    	
+                    </div>
+            </div>
+            <div class="mc3 animated fadeInRight">
+            	    <p class="mcon-p1">小鸟掌学</p>
+                    <img class="mcon-im1" src="images/pen_line.png" alt="">
+                    <img class="mcon-im2" src="images/pen.png" alt="">
+                    <div class="mcon-p2">
+                    	<div class="mcon-p2im"></div>
+                    	<div class="mcon-p2te">
+                    		<h3>概述</h3>
+                                                              小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在
+                                                              线培训平台，受到客户与社会的密切关注与欢迎。卓新思创科技有限公司负责小鸟
+                                                              掌学的运营、推广和研发等工作。
+                    	</div>
+                    	<div class="click">
+                    		<img class="c1" src="images/prev_jiantou.png" alt="" />
+                    		<i class="c2"></i>
+                    		<img class="c1" src="images/next_jiantou.png" alt="" />
+                    	</div>
+                    	<div class="mcon-p2te1">
+                                                               我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！<br />
+                                                               我们做的是“新学习、新媒体”！<br />
+                                                               帮助企业建立自己的企业学校，实现：全民全学、全民全校、全民全智(比拼式学习)！<br />
+                    	</div>
+                        <div class="mcon-p2te2">
+                        	<img src="images/yinhao_zuo.png" alt="" />学我所用、学以致用<img src="images/yinhao_you.png" alt="" />
+                        </div>
+                    </div>
+            </div>
+            <div class="mc3 animated zoomInRight">
+            	    <p class="mcon-p1">小鸟掌学</p>
+                    <img class="mcon-im1" src="images/pen_line.png" alt="">
+                    <img class="mcon-im2" src="images/pen.png" alt="">
+                    <div class="mcon-p2">
+                   
+                                                              小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在
+                                                              线培训平台，受到客户与社会的密切关注与欢迎。卓新思创科技有限公司负责小鸟
+                                                              掌学的运营、推广和研发等工作。
+                    	
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主要产品结束-->
+<!--公司简介开始-->
+<div class="comp">
+	<div class="mainchanpin">
+        <div class="mcp1" style="visibility: hidden;"></div>
+        <h1>公司简介</h1>
+        <p class="cmp2">About Company</p>
+        <p class="cmp3"></p>
+        <div class="maincontent">
+            <div class="mc1" style="display: none;"></div>
+            <div class="mc2"><img src="images/jianjie_image01.jpg" alt=""></div>           
+            <div class="mc3">
+                    <p class="mcon-p1">卓新思创科技有限公司</p>
+                    <img class="mcon-im1" src="images/pen_line.png" alt="">
+                    <img class="mcon-im2" src="images/pen.png" alt="">
+                    <div class="mcon-p2">
+                    	<div class="mcon-p2im"></div>
+                    	<div class="mcon-p2te">
+                    		<h3>概述</h3>
+                                                              卓新思创科技有限公司，源自四川省专业技术人员继续教育基地的在线培训平台，
+                                                              经过多年的积累，我们已经拥有强大的教育产品设计开发团队，拥有众多在线教育产品。
+                    	</div>
+                    	<div class="click">
+                    		<img  style="display: none;" class="c1" src="images/prev_jiantou.png" alt="" />
+                    		<i class="c2"></i>
+                    		<img  style="display: none;" class="c1" src="images/next_jiantou.png" alt="" />
+                    	</div>
+                    	<div class="mcon-p2te1">
+                                                              在线教育，正在改变人们的学习方式，微课、微学习的流行，更是让碎片化
+                                                              的时间得到充分的利用，我们有理由相信，在线微学习，将成为未来在线教
+                                                              育的主流模式。我们全新推出企业培训微学平台—小鸟掌学，全面覆盖PC、
+                                                              手机、平板的学习方式，极高自由度的培训选择，企业可选择购买平台在售
+                                                              课程，或自己上传课程。
+                    	</div>
+                        <div class="mcon-p2te2">
+                        	<img src="images/yinhao02_zuo.png" alt="" />企业培训，从未如此简单<img src="images/yinhao02_you.png" alt="" />
+                        </div>
+                    </div>      
+            </div>
+        </div>
+    </div>
+</div>
+<!--公司简介结束-->
+<!--业务范围-->
+<div class="businessbox">
+	<div class="business">
+		<div class="bn1"></div>
+        <h1>业务范围</h1>
+        <p class="cmp2">Business Scope</p>
+        <p class="cmp3"></p>
+        <ul class="bn2">
+        	<li class="bn2-li1">
+        		<div class="bn-cont1">
+        			<ul>
+        			    <li class="bn-contli1">01</li>
+        			    <li class="bn-contli2">
+        			    	<h2>企业培训平台</h2>
+        			    	Enterprise training Platform
+        			    </li>
+        			    <li class="bn-contli3">
+        			    	<img src="images/business_cimg01.png" alt="" />
+        			    </li>
+        			    <li class="bn-contli4">
+        			    	我们的愿景：成为中国最强、最大的中小微企业<br />
+        			    	定制在线学习服务提供商！<br />
+                                                                         我们做的是“新学习、新媒体”！
+        			    </li>
+        			    <li class="bn-contli5"></li>
+        			</ul>
+        		</div>
+        		<div class="bn-cont2">
+        			“小鸟掌学”云平台是一套完整的专家知识、学习管理、监督考核系统。
+        			首先根据企业和员工的特性，抓取学习需求，然后从“平台学习库、行
+        			业学习库和企业内训库”中调出教学资源，按学习计划“推送”任务给每
+        			一位员工，并对学习过程进行监管，对学习效果进行评估，根据学习情
+        			况调整学习计划，不断优化员工的职业生涯。<br /><br />
+                    “小鸟掌学”主要基于智能手机平台进行学习。针对性、趣味性、创新性
+                                                    的学习方式有助于员工建立学习兴趣，将学习与趣味相结合，提高学习
+                                                    吸收率。提高员工技能，增加企业效益。
+        		</div>
+        	</li><i class="c2 b2"></i>       	
+        	<li class="bn2-li1">
+        		<div class="bn-cont1">
+        			<ul>
+        			    <li class="bn-contli1">02</li>
+        			    <li class="bn-contli2">
+        			    	<h2>小鸟掌学云服务</h2>
+        			    	cloud services
+        			    </li>
+        			    <li class="bn-contli3">
+        			    	<img src="images/business_cimg02.png" alt="" />
+        			    </li>
+        			    <li class="bn-contli4">
+        			    	我们的愿景：成为中国最强、最大的中小微企业<br />
+        			    	定制在线学习服务提供商！<br />
+                                                                         我们做的是“新学习、新媒体”！
+        			    </li>
+        			    <li class="bn-contli5"></li>
+        			</ul>
+        		</div>
+        		<div class="bn-cont2">
+        			“小鸟掌学”云平台是一套完整的专家知识、学习管理、监督考核系统。
+        			首先根据企业和员工的特性，抓取学习需求，然后从“平台学习库、行
+        			业学习库和企业内训库”中调出教学资源，按学习计划“推送”任务给每
+        			一位员工，并对学习过程进行监管，对学习效果进行评估，根据学习情
+        			况调整学习计划，不断优化员工的职业生涯。<br /><br />
+                    “小鸟掌学”主要基于智能手机平台进行学习。针对性、趣味性、创新性
+                                                    的学习方式有助于员工建立学习兴趣，将学习与趣味相结合，提高学习
+                                                    吸收率。提高员工技能，增加企业效益。
+        		</div>
+        	</li><i class="c2 b2"></i>
+        	<li class="bn2-li1">
+        		<div class="bn-cont1">
+        			<ul>
+        			    <li class="bn-contli1">03</li>
+        			    <li class="bn-contli2">
+        			    	<h2>企业培训课程内容提供</h2>
+        			    	Enterprise training course
+        			    </li>
+        			    <li class="bn-contli3">
+        			    	<img src="images/business_cimg03.png" alt="" />
+        			    </li>
+        			    <li class="bn-contli4">
+        			    	我们的愿景：成为中国最强、最大的中小微企业<br />
+        			    	定制在线学习服务提供商！<br />
+                                                                         我们做的是“新学习、新媒体”！
+        			    </li>
+        			    <li class="bn-contli5"></li>
+        			</ul>
+        		</div>
+        		<div class="bn-cont2">
+        			“小鸟掌学”云平台是一套完整的专家知识、学习管理、监督考核系统。
+        			首先根据企业和员工的特性，抓取学习需求，然后从“平台学习库、行
+        			业学习库和企业内训库”中调出教学资源，按学习计划“推送”任务给每
+        			一位员工，并对学习过程进行监管，对学习效果进行评估，根据学习情
+        			况调整学习计划，不断优化员工的职业生涯。<br /><br />
+                    “小鸟掌学”主要基于智能手机平台进行学习。针对性、趣味性、创新性
+                                                    的学习方式有助于员工建立学习兴趣，将学习与趣味相结合，提高学习
+                                                    吸收率。提高员工技能，增加企业效益。
+        		</div>
+        	</li><i class="c2 b2"></i>
+        </ul>
+	</div>
+</div>
+<!--团队介绍-->
+<div class="teambox">
+	<div class="team">
+		<div class="tm1"></div>
+        <h1>团队介绍</h1>
+        <p class="cmp2">Our Team</p>
+        <p class="cmp3"></p>
+        <div class="teamban">
+        	<div class="tbanbox">
+        		<ul class="tbanner animated bounceInRight">
+        			<li>
+        				<div class="tban1">
+        					<img src="images/team_img01.png" alt="" />
+        					<p>李志<br />前端工程师/设计师
+        					</p>
+        				</div>
+        				<div class="tban2">
+        					<div class="tban2-top">暂未更新，敬请期待</div>
+        					<div class="tban2-bottom">
+        						<b></b><p>发送邮件</p>
+        					</div>
+        				</div>
+        				<div class="tban3">
+        					<b class="b1"></b>
+        				</div>
+        			</li>
+        			<li>
+        				<div class="tban1">
+        					<img src="images/team_img02.png" alt="" />
+        					<p>小菲<br />前端工程师/设计师
+        					</p>
+        				</div>
+        				<div class="tban2">
+        					<div class="tban2-top">暂未更新，敬请期待</div>
+        					<div class="tban2-bottom">
+        						<b></b><p>发送邮件</p>
+        					</div>
+        				</div>
+        				<div class="tban3">
+        					<b class="b1"></b>
+        				</div>
+        			</li>
+        			<li>
+        				<div class="tban1">
+        					<img src="images/team_img03.png" alt="" />
+        					<p>李志<br />前端工程师/设计师
+        					</p>
+        				</div>
+        				<div class="tban2">
+        					<div class="tban2-top">暂未更新，敬请期待</div>
+        					<div class="tban2-bottom">
+        						<b></b><p>发送邮件</p>
+        					</div>
+        				</div>
+        				<div class="tban3">
+        					<b class="b1"></b>
+        				</div>
+        			</li>
+        			<li>
+        				<div class="tban1">
+        					<img src="images/team_img04.png" alt="" />
+        					<p>李志<br />前端工程师/设计师
+        					</p>
+        				</div>
+        				<div class="tban2">
+        					<div class="tban2-top">暂未更新，敬请期待</div>
+        					<div class="tban2-bottom">
+        						<b></b><p>发送邮件</p>
+        					</div>
+        				</div>
+        				<div class="tban3">
+        					<b class="b1"></b>
+        				</div>
+        			</li>
+        			<li>
+        				<div class="tban1">
+        					<img src="images/team_img05.png" alt="" />
+        					<p>李志<br />前端工程师/设计师
+        					</p>
+        				</div>
+        				<div class="tban2">
+        					<div class="tban2-top">暂未更新，敬请期待</div>
+        					<div class="tban2-bottom">
+        						<b></b><p>发送邮件</p>
+        					</div>
+        				</div>
+        				<div class="tban3">
+        					<b class="b1"></b>
+        				</div>
+        			</li>
+        			<li>
+        				<div class="tban1">
+        					<img src="images/team_img06.png" alt="" />
+        					<p>李志<br />前端工程师/设计师
+        					</p>
+        				</div>
+        				<div class="tban2">
+        					<div class="tban2-top">暂未更新，敬请期待</div>
+        					<div class="tban2-bottom">
+        						<b></b><p>发送邮件</p>
+        					</div>
+        				</div>
+        				<div class="tban3">
+        					<b class="b1"></b>
+        				</div>
+        			</li>
+        			<li>
+        				<div class="tban1">
+        					<img src="images/team_img07.png" alt="" />
+        					<p>李志<br />前端工程师/设计师
+        					</p>
+        				</div>
+        				<div class="tban2">
+        					<div class="tban2-top">暂未更新，敬请期待</div>
+        					<div class="tban2-bottom">
+        						<b></b><p>发送邮件</p>
+        					</div>
+        				</div>
+        				<div class="tban3">
+        					<b class="b1"></b>
+        				</div>
+        			</li>
+        			<li>
+        				<div class="tban1">
+        					<img src="images/team_img08.png" alt="" />
+        					<p>李志<br />前端工程师/设计师
+        					</p>
+        				</div>
+        				<div class="tban2">
+        					<div class="tban2-top">暂未更新，敬请期待</div>
+        					<div class="tban2-bottom">
+        						<b></b><p>发送邮件</p>
+        					</div>
+        				</div>
+        				<div class="tban3">
+        					<b class="b1"></b>
+        				</div>
+        			</li>
+        			<li>
+        				<div class="tban1">
+        					<img src="images/team_img09.png" alt="" />
+        					<p>李志<br />前端工程师/设计师
+        					</p>
+        				</div>
+        				<div class="tban2">
+        					<div class="tban2-top">暂未更新，敬请期待</div>
+        					<div class="tban2-bottom">
+        						<b></b><p>发送邮件</p>
+        					</div>
+        				</div>
+        				<div class="tban3">
+        					<b class="b1"></b>
+        				</div>
+        			</li>
+        		</ul>
+        	</div>
+        	<div class="pos">
+                <span class="prev"></span>
+                <span class="next"></span>
+                <div class="smallbox">
+                   <div class="sleft"></div>
+                   <ul class="scenter">
+                   <li class="sc1"><img src="images/next&prev_mbg01.png"></li>
+                   <li class="sc2">
+                        <ul class="now now1">
+                            <li id="nowchange"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li class="sc1"><img src="images/next&prev_mbg03.png"></li>
+                </ul>
+                <div class="sright"></div>
+            </div>
+            </div>
+        </div>
+	</div>
+</div>
+<!--合作机构-->
+<div class="partnerbox">
+	<div class="partner">
+		<h1>合作机构</h1>
+        <p class="cmp2">Our Partners</p>
+        <p class="cmp3"></p>
+        <div class="per">
+        	<div class="perleft">
+        		<h2>合作机构</h2>
+        		<p>Our partners</p>
+        		<ul>
+        			<li><img src="images/pLogo01.png"></li>
+        			<li><img src="images/pLogo02.png"></li>
+        			<li><img src="images/pLogo03.png"></li>
+        			<li><img src="images/pLogo04.png"></li>
+        			<li><img src="images/pLogo05.png"></li>
+        			<li><img src="images/pLogo06.png"></li>
+        		</ul>
+        	</div>
+        	<div class="perright">
+        		<div class="user"><h2>用户</h2><em></em></div>       		
+        		<p>3000+</p>
+        		<ul>
+        			<li><img src="images/uLogo01.png"></li>
+        			<li><img src="images/uLogo02.png"></li>
+        			<li><img src="images/uLogo03.png"></li>
+        			<li><img src="images/uLogo04.png"></li>
+        			<li><img src="images/uLogo05.png"></li>
+        			<li><img src="images/uLogo06.png"></li>
+        		</ul>
+        	</div>
+        </div>
+	</div>
+</div>
+<!--联系我们-->
+<div class="contactbox">
+	<div class="contact">
+		<h1>联系我们</h1>
+        <p class="cmp2">Contact Us</p>
+        <p class="cmp3"></p>
+        <div class="info">
+        	<div>
+        		<i></i>
+        		<input type="text" name="" id="" value="*名字" />
+        	</div>
+        	<div>
+        		<i class="i1"></i>
+        		<input type="text" name="" id="" value="*邮箱" />
+        	</div>
+        	<div>
+        		<i class="i2"></i>
+        		<input type="text" name="" id="" value="联系电话" />
+        	</div>
+        </div>
+        <div class="mess">
+        	<div class="me1">
+        		<i class="i3"></i>
+        		<textarea name="" rows="" cols="">*说点什么吧</textarea>
+        	</div>
+        	<div class="me2">
+        		<p>
+        			*亲，留言的时候请留下你的姓名和联系方式哦<br />
+        			<span>谢谢你的留言，我们 将及时处理</span>
+        		</p>
+        		<div>
+        			<i class="i4"></i>
+        		           发送留言
+        		</div>
+        	</div>
+        </div>
+        <div class="type">
+        	<div>
+        		<img src="images/lianxi_icon01.png" alt="" />
+        		<p>
+        			<span>地址</span><br />
+        			<img src="images/lianxi_kuaier_bg.png" alt="" /><br />
+        			北京市昌平区站前东街2号<br />
+        			邮编 ：100081
+        		</p>
+        	</div>
+        	<div>
+        		<img src="images/lianxi_icon02.png" alt="" />
+        		<p>
+        			<span>电话</span><br />
+        			<img src="images/lianxi_kuaier_bg.png" alt="" /><br />
+        			总机：028-88888888
+        		</p>
+        	</div>
+        	<div>
+        		<img src="images/lianxi_icon03.png" alt="" />
+        		<p>
+        			<span>网络途径</span><br />
+        			<img src="images/lianxi_kuaier_bg.png" alt="" /><br />
+        			邮箱：11111111@234.cn<br />
+        			微博 ：aaaaaa_sina
+        			微信：ccccccc_weixin
+        		</p>
+        	</div>
+        </div>
+	</div>
+</div>
+<!--地图-->
+<div class="map">
+	<iframe src="map.html" frameborder="0" scrolling="no" width="100%" height="660px"></iframe>
+</div>
+<!--尾部-->
+<div class="footer"></div>
+<!--返回顶部-->
+<div class="back"></div>
+</body>
+</html>

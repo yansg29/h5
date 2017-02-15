@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.back1{
+				width: 50px;
+				height: 50px;
+				border-radius: 25px;
+				background: url(images/scroll_top_bg.png) no-repeat;
+				position: fixed;
+				bottom: 200px;
+				right: 50px;
+				transition: all 1s;				
+			}
+			.back1:hover{
+				background-position-y: -50px;
+			}
+			.back2{
+				width: 87px;
+				height: 87px;
+				background: url(images/fixed_contactus.png) no-repeat -148px 0;
+				position: fixed;
+				bottom: 100px;
+				right: 30px;
+				transition: all 1s;
+			}
+			.back2:hover{	
+				background: url(images/fixed_contactus.png) no-repeat 0 0;			
+				/*background-position: 0 0;*/
+				width: 235px;
+				height: 87px;
+				
+			}
+		</style>
+		<!--<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>-->
+		<script>
+		    $(function(){
+		    	var oback=$(".back1");
+		    	var timer=0;
+		    	oback.click(function(){
+		    		timer=setInterval(function(){
+					var scrolltop=document.documentElement.scrollTop || document.body.scrollTop;
+					var speed=500;
+					document.body.scrollTop-=speed;
+					document.documentElement.scrollTop-=speed;
+					if(scrolltop<=0){
+						clearInterval(timer);
+						timer=0;
+					}
+					},50);						
+		    	})
+		    })
+//			window.onload=function(){
+//				var oback=document.getElementById("back2");
+//				var timer=0;
+//				oback.onclick=function(){
+//					timer=setInterval(function(){
+//					var scrolltop=document.documentElement.scrollTop || document.body.scrollTop;
+//					var speed=100;
+//					document.body.scrollTop-=speed;
+//					document.documentElement.scrollTop-=speed;
+//					if(scrolltop<=0){
+//						clearInterval(timer);
+//						timer=0;
+//					}
+//					},50);					
+//				}
+//			}
+		</script>
+	</head>
+	<body>
+		<div class="backbox">
+		<div class="back1"></div>
+		<div class="back2"></div>
+		</div>
+	</body>
+</html>
